@@ -1,0 +1,129 @@
+/* Estilos del cuerpo de la página */
+body {
+  margin: 0;
+  background: #888;
+  font-family: serif;
+}
+
+/* Todo el container */
+.container-all {
+  width: 80vw;
+  height: calc(70vh - 1px);
+  margin: auto;
+  margin-top: 35px;
+  padding-top: 25px; 
+  text-align: center;
+  border-radius: 12px;
+  background: #2b2b2b;
+  color: #aaa;
+  box-shadow: 15px 15px 9px #555;
+  box-sizing: border-box;
+}
+.container-all > h2 {
+  margin-bottom: 45px;
+}
+
+/* Imagen de la D ( profile ) */
+.dImagen {
+  color: #fff;
+  width: 120px ;
+  border-radius: 100%;
+}
+
+.linkBTN {
+  font-size: 20px;
+  font-family: inherit;
+  width: 75%;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border: none;
+  color: #eee;
+  /* Tiempo para la transición */
+  transition:  0.1s;
+}
+.linkBTN:hover {
+  transform: scale(0.90);
+  outline: 3px solid #fff;
+  box-sizing: border-box;
+}
+.linkBTN:active {
+  transform: scale(1.05);
+}
+
+/* Botón de Facebook */
+.BTN-Facebook {
+  background: #48e;
+}
+
+/* Botón de YouTube */
+.BTN-YT {
+  background: radial-gradient(#a22,#000);
+}
+.BTN-YT:active {
+  background: radial-gradient( #e22, #222);
+}
+
+/* Botón de Instagram */
+.BTN-Insta {
+  color: #000;
+  background: linear-gradient(to left, #72d,#f2f 45%, #dd5 85%);
+}
+.BTN-Insta:active {
+  
+}
+
+/* Botón de X (Anteriormente Twitter) */
+.BTN-Twitter {
+  background: linear-gradient(#000 45%, #eee ) ;
+}
+.BTN-Twitter:first-letter {
+  font-size: 2em;
+}
+.BTN-Twitter:hover {
+  background: linear-gradient(#222 45%, #fff );
+  color: #fff;
+}
+.X--info {
+color: #afb7af;
+}
+
+
+
+/* Visualización según el tamaño de la pantalla */
+/* PC */
+@media (min-width: 900px) {
+  
+  .container-all {
+    width: 80vh;
+    height: 35vh;
+    margin: auto;
+margin-top: 35px;
+  }
+
+}
+/* Celulares promedios */
+@media (min-width: 432px){
+
+}
+/* Tablet */
+ @media (min-width: 870px) {
+
+   .container-all {
+     width: 30vw;
+     height: 70vh;
+     margin: 45px;
+   }
+   .botones {
+     position: absolute;
+     width: 45vw;
+     top: 5em;
+     left: 42vw;
+     box-sizing: border-box;
+   }
+   .linkBTN {
+     width: 60%;
+   }
+
+ }
+ 
